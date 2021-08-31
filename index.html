@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sports DB</title>
+    <!-- bootstrap css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        #error1{
+            display: none;
+        }
+        #error2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="container py-5 rounded">
+            <h1 class="text-center text-info">Searce Your Favourite Club</h1>
+            <div class="input-group mt-5 w-50 mx-auto">
+                <input id="searce-field" type="text" class="form-control me-3 rounded-3 p-2" placeholder="Searce Your Club" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searceSports()" class="btn btn-outline-secondary px-4 rounded-3 fw-bold" type="button" id="button-addon2">Searce</button>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <!-- error handle     -->
+        <section id="error1">
+            <h3 class="text-center text-danger">Opps! Please write club name.</h3>
+        </section>
+
+        <!-- error handle2     -->
+        <section id="error2">
+            <h3 class="text-center text-danger">Opps! Please write carefully.</h3>
+        </section>
+
+        <!-- add spinner  -->
+        <div class="d-flex justify-content-center">
+            <div id="spinner" class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        </section>
+        <!-- Description section  -->
+        <section class="container my-5">
+            <div id="dealils-section" class="row row-cols-1 row-cols-md-3 g-4">
+                           
+            </div>
+        </section>
+        <!-- seatce reault section -->
+        <section class="container my-5">
+            <div id="player-section" class="row row-cols-1 row-cols-md-3 g-4">
+                           
+            </div>
+        </section>
+    </main>
+    <!-- bootstrap js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- my script  -->
+    <script src="sports.js"></script>
+</body>
+</html>
